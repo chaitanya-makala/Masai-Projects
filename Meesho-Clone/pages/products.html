@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/097231be4e.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/511a6cb386.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        h2 {
+            padding-left: 3%;
+            margin-top: 3%;
+            font-size: bold;
+        }
+
+        #container {
+            width: 95%;
+            height: 670px;
+
+            margin: auto;
+            display: flex;
+            cursor: pointer;
+
+        }
+        header {
+  box-shadow: 0 2px 4px 0 rgba(90, 90, 90, .5);
+  background-color: #fff;
+  z-index: 10000;
+  position: fixed;
+  width: 100vw;
+  height: 70px;
+  top: 0;
+  left: 0;
+}
+.div1 {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  position: sticky;
+  margin-bottom: 0px;
+}
+
+#imgDiv {
+  margin-top: 15px;
+  width: 30px;
+  height: 45px;
+  margin-left: 130px;
+}
+
+#search {
+  margin-left: 180px;
+  width: 50%;
+  height: 120px;
+  /* border: 1px solid orange; */
+}
+
+#download {
+  display: flex;
+  width: 20%;
+  height: 100%;
+  margin-top: 5px;
+  justify-content: right;
+  margin-left: 5%;
+  /* border: 1px solid red; */
+}
+#Supplier {
+  width: 16%;
+  /* border: 1px solid red; */
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+}
+#profile {
+  width: 10%;
+  margin-top: 1.3%;
+  /* border: 1px solid red; */
+  text-align: center;
+  line-height: 5px;
+  cursor: pointer;
+}
+
+#cart {
+  width: 10%;
+  /* border: 1px solid red; */
+  text-align: center;
+  margin-top: 1.3%;
+  line-height: 5px;
+  cursor: pointer;
+}
+
+#search > input {
+  width: 93%;
+  height: 40%;
+  margin-top: 5px;
+  padding: 14px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.div1 > img {
+  height: 100%;
+}
+
+#downloadImgDiv {
+  width: 20%;
+}
+#downloadTextDiv {
+  width: 60%;
+}
+
+.firstBannerPlayStore {
+  width: 75%;
+  height: 370px;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+}
+
+.TopCategoriesSeperator {
+  /* border: 1px solid red; */
+  width: 75%;
+  margin: auto;
+  margin-top: 20px;
+  height: 70px;
+  display: flex;
+}
+
+.fashionStore {
+  width: 75%;
+  height: 450px;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #fce1d1;
+  border-radius: 5px;
+  display: flex;
+}
+
+/* div1 subdives */
+
+#playLeftBanner {
+  width: 50%;
+  height: 100%;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+#rightModelsBanner {
+  border-radius: 5px;
+  width: 50%;
+  height: 100%;
+}
+
+.TopCategoriesSeperator > div {
+  width: 50%;
+  height: 100%;
+  /* border: 1px solid red; */
+  margin: auto;
+}
+
+#HrLineCategoriesSeperator {
+  width: 25%;
+  /* border: 1px solid #f43397; */
+  height: 2px;
+}
+
+#fashionStoreLeftDiv {
+  /* border: 1px solid red; */
+  padding: 15px;
+  width: 35%;
+}
+#fashionStoreRightDiv {
+  /* border: 1px solid red; */
+  padding: 12px;
+  width: 65%;
+}
+#fashionStoreRightDiv > div {
+  display: flex;
+  /* border: 1px solid red; */
+  height: 60%;
+}
+
+/* div1 subdiv components */
+
+#H1PlayBanner {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-left: 40px;
+  margin-top: 50px;
+}
+#FiftyLakh {
+  margin-top: 30px;
+  margin-left: 50px;
+  height: 60px;
+  width: 65%;
+  padding-left: 25px;
+  background-color: white;
+
+  border-radius: 10px;
+}
+#FiftyLakh > p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+  color: #9c8378;
+  padding-top: 15px;
+  font-size: 19px;
+}
+
+#playLeftBanner > input[type="submit"] {
+  width: 60%;
+  cursor: pointer;
+  height: 50px;
+  margin-left: 40px;
+  margin-top: 25px;
+  font-size: 18px;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  background-color: #f43397;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#H1Seperator {
+  text-align: center;
+}
+#H1Seperator > h1 {
+  font-size: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+#rightModelsBanner > img {
+  border-radius: 5px;
+}
+
+#imgLeftfashionStore {
+  margin-top: 14%;
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.imgLeftDivfashionStore {
+  /* border: 1px solid greenyellow; */
+  width: 80%;
+  height: 60%;
+}
+.westernWearMensWear {
+  /* border: 1px solid black; */
+  display: flex;
+}
+#fashionStoreRightDiv > div > div {
+  margin-left: 25px;
+  cursor: pointer;
+}
+#fashionStoreRightDiv > div > div > img {
+  border-radius: 2px;
+}
+
+/* home Care */
+
+.homeCare {
+  width: 75%;
+  height: 450px;
+  margin: auto;
+  margin-top: 50px;
+  background-image: url("https://media.designcafe.com/wp-content/uploads/2020/03/21013220/white-walls-simple-living-room-ideas.jpg");
+  border-radius: 5px;
+  /* border: 1px solid black; */
+  display: flex;
+}
+.homeCare > div {
+  /* border: 1px solid red; */
+  width: 20%;
+  margin: auto;
+  height: 80%;
+  text-align: center;
+}
+.homeCare > div:nth-child(1) {
+  /* border: 1px solid red; */
+  width: 35%;
+  height: 80%;
+}
+.homeCare > div:nth-child(1) > h1 {
+  font-size: 40px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #038d63;
+  margin-top: 50px;
+}
+#homeCareButton1 {
+  color: #f1feff;
+  background-color: #038d63;
+  border: 0;
+  border-radius: 5px;
+  font-size: 17px;
+  height: 50px;
+  margin-top: 20px;
+  padding: 12px;
+  width: 150px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+
+#otherDivHomeCare {
+  /* border: 1px solid red; */
+  width: 20%;
+  margin: auto;
+  height: 80%;
+  text-align: center;
+}
+
+#subOtherImgDivHomeCare {
+  border: 7px solid #cdedde;
+  height: 80%;
+}
+
+#OtherButtonDivHomeCare {
+  color: #4ba9b4;
+  background-color: white;
+  border: 0;
+  border-radius: 5px;
+  font-size: 17px;
+  height: 45px;
+  margin-top: 12px;
+  padding: 12px;
+  width: 150px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+
+/* play store And Apple Store downlaod link*/
+
+.playAppleStore {
+  width: 75%;
+  height: 550px;
+  margin: auto;
+  margin-top: 50px;
+  background-image: url("https://meesho.com/_next/static/images/download_banner-19ca4d63d9c1dc44bc8cbfae62b60bd7.jpg");
+  border-radius: 5px;
+  /* border: 1px solid black; */
+  display: flex;
+  background-size: cover;
+  text-align: right;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.playAppleStore>div{
+  margin: 0%;
+  /* border: 1px solid red; */
+}
+.playAppleStore > div:nth-child(1) {
+  width: 50%;
+}
+
+.playAppleStore > div:nth-child(2) {
+  margin-top: 50px;
+  width: 50%;
+  margin-right: 25px;
+}
+#h2PlayAppleStore {
+  margin-top: 70px;
+  color: #5b8ef7;
+  font-weight: bold;
+}
+#h1PlayAppleStore {
+  color: #f43b9b;
+  font-weight: bold;
+}
+#rightPlayAppleStoreDiv > div {
+  height: 50%;
+  /* border: 1px solid green; */
+}
+#lowerImgDiv {
+  display: flex;
+}
+#lowerImgDiv > div {
+  /* border: 1px solid blue; */
+  width: 25%;
+  height: 22%;
+  padding: 10px;
+  text-align: center;
+  background-color: black;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 10px;
+}
+#imgPlayApple {
+  height: 100%;
+  width: 100%;
+}
+#lowerImgDiv > div:nth-child(1) {
+  margin-left: 30%;
+}
+
+/* Register As a Meesho Supplier Banner */
+
+.registerAsMeeshoSupplier {
+  width: 75%;
+  height: 245px;
+  margin: auto;
+  margin-top: 50px;
+  padding-top: 45px;
+  padding-left: 45px;
+  color: white;
+  border-radius: 3px;
+  background-size: cover;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-image: url("https://meesho.com/_next/static/images/supply_banner_desk-d53b6ffa3ee3c43feedcfdd0f3d9bd8d.jpg");
+}
+
+.registerAsMeeshoSupplier > span:nth-child(1) {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+}
+#pOfBannerSupplier {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  margin-top: 16px;
+}
+#threeTick {
+  display: flex;
+  width: 60%;
+  margin-top: 25px;
+  border: 1px solid black;
+}
+#threeTick > hr {
+  height: 10px;
+  color: white;
+  border: 1px solid white;
+}
+#signUpBannerDiv {
+  height: 35px;
+  width: 180px;
+  color: #f43397;
+  text-align: center;
+  padding: 10px 28px;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#signUpBannerDiv > p {
+  font-size: 18px;
+  margin: auto;
+  font-weight: 600;
+}
+
+.fa-check-circle {
+  color: yellowgreen;
+}
+
+/* -------------------------Half Navbar-------------------------------------- */
+html {
+  box-sizing: border-box;
+  margin-top: 130px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* #Universal and Default Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.container {
+  width: 940px;
+  color: #ddd;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+}
+
+.ul-reset {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+/* #Navigation Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+nav {
+  background: white;
+  font-size: 0;
+  overflow: hidden;
+}
+
+nav > ul > li {
+  display: inline-block;
+  font-size: 14px;
+  padding: 0 15px;
+  position: relative;
+}
+
+nav > ul > li:first-child {
+  padding-left: 0;
+}
+
+nav > ul > li:last-child {
+  padding-right: 0;
+}
+
+nav > ul > li > a {
+  color: black;
+  display: block;
+  position: relative;
+  padding: 20px 0;
+  border-bottom: 3px solid transparent;
+}
+
+nav > ul > li:hover > a {
+  color: #f43698;
+  border-bottom: 5px solid#f43698;
+}
+
+/* #Mega Menu Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.mega-menu {
+  background: #f0f0f0;
+  display: none;
+  left: 0;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+}
+
+.mega-menu h3 {
+  color: #f00ebf;
+}
+
+.mega-menu ul {
+  float: left;
+  margin-bottom: 20px;
+  margin-right: 40px;
+  width: 205px;
+}
+
+.mega-menu ul:last-child {
+  margin-right: 0;
+}
+
+.mega-menu a {
+  border-bottom: 1px solid #ddd;
+  color: rgb(58, 58, 58);
+  display: block;
+  padding: 10px 0;
+}
+
+.mega-menu a:hover {
+  color: black;
+  font-weight: bold;
+}
+
+
+        p {
+            padding-left: 3%;
+            margin-bottom: 20px;
+
+
+        }
+
+        #container>div {
+
+            width: 25%;
+            height: 100%;
+            margin-left: 1%;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            border-radius: 10px;
+        }
+
+        .inner {
+            border-radius: 10px;
+            width: 100%;
+            height: 400px;
+
+        }
+
+        .inner2 {
+            width: 100%;
+            height: 195px;
+
+        }
+
+        .common {
+            width: 100%;
+            height: 400px;
+            border-radius: 10px;
+        }
+
+        .arrange {
+            font-size: 16px;
+            font-family: sans-serif;
+            color: gray;
+            font-weight: bold;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .padd {
+            margin-left: 5%;
+            font-weight: lighter;
+            text-decoration: line-through;
+            font-size: 22px;
+            margin-top: -3%;
+            color: gray;
+        }
+
+        h3 {
+            font-size: 22px;
+            color: #008145;
+            margin-top: 5%;
+            padding-left: 10%;
+            margin-top: -3%;
+
+
+
+
+        }
+
+        .padd2 {
+            margin-top: -3%;
+            margin-left: 0%;
+        }
+
+        /* .discount-icon {
+            margin-left: 2%;
+        } */
+
+        .discount-txt {
+            font-size: 20px;
+            color: gray;
+            padding-bottom: 3%;
+            font-weight: lighter;
+            padding-left: 2%;
+
+        }
+
+        .icon {
+            border: 1px solid transparent;
+            width: 100%px;
+            height: 30px;
+            margin-left: 2%;
+        }
+
+        .imge {
+            height: 19px;
+            width: 19px;
+            padding-left: 5px;
+            margin-bottom: 2%;
+        }
+
+        .round-bar {
+            width: 100px;
+            height: 30px;
+            border: 1px solid lightgray;
+            margin: auto;
+            margin-top: 20px;
+            margin-left: 20px;
+            border-radius: 20px;
+        }
+
+        .free-d {
+            color: gray;
+            font-weight: lighter;
+            margin-bottom: -6%;
+            margin: auto;
+            padding: 6px 10px;
+            font-size: 14px;
+
+        }
+
+        .review {
+            width: 60px;
+            height: 35px;
+            background-color: #23bb75;
+            border-radius: 20px;
+            margin: 18px;
+            padding-left: 20px;
+            padding-right: 10px;
+        }
+
+        .r-color {
+            color: white;
+            font-size: 18px;
+            padding-top: 8px;
+            padding-right: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Div1 -->
+        <div class="div1">
+
+            <!-- imgView -->
+            <div id="imgDiv">
+                <img height="100%" width="200px" src="../img/headerLogo.png" alt="">
+            </div>
+            <!-- search Box -->
+            <div id="search">
+                <input type="text" placeholder="Try Saree, Kurti or Search by Product Code..">
+            </div>
+
+
+            <!-- downloadAp -->
+            <div id="download">
+                <div id="downloadImgDiv">
+                    <i class="fas fa-mobile" style="font-size:48px; text-align: center;"></i>
+                </div>
+
+                <div id="downloadTextDiv">
+                    <p
+                        style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                        Download App</p>
+                </div>
+                <hr>
+            </div>
+
+            <!-- Be a Supplier -->
+            <div id="Supplier">
+                <p style="font-family: 'Lucida Sans', 
+            'Lucida Sans Regular', 'Lucida Grande',
+             'Lucida Sans Unicode', Geneva, Verdana, 
+             sans-serif;">Become a Supplier</p>
+
+            </div>
+            <hr>
+            <!-- profile -->
+            <div id="profile">
+                <div>
+                    <i class="far fa-user" style="font-size:25px; text-align: center;"></i>
+                </div>
+                <p>profile</p>
+            </div>
+
+
+            <!-- cart -->
+            <div id="cart">
+                <div>
+                    <i class="fas fa-shopping-cart" style="font-size: 25px; text-align: center;"></i>
+                </div>
+                <p>Cart</p>
+
+            </div>
+        </div>
+        
+
+
+        <nav class="nav">
+            <hr>
+            <ul class="container ul-reset">
+
+                <li class='droppable'>
+                    <a href='#'>Women Ethnic</a>
+                    <div class='mega-menu'>
+                        <div class="container cf">
+                            <ul class="ul-reset">
+                                <h3>All Women Ethnics</h3>
+                                <li><a href='../pages/products.html'>View All</a></li>
+
+
+                            </ul><!-- .ul-reset -->
+                            <ul class="ul-reset">
+                                <h3>Sarees</h3>
+                                <li><a href='#'>Jeans</a></li>
+                                <li><a href='#'>Jeggings</a></li>
+                                <li><a href='#'>Palazzos</a></li>
+                                <li><a href='#'>Shorts</a></li>
+                                <li><a href='#'>Skirts</a></li>
+                            </ul><!-- .ul-reset -->
+
+                            <ul class="ul-reset">
+                                <h3>Kurtis</h3>
+                                <li><a href='#'>Jeans</a></li>
+                                <li><a href='#'>Jeggings</a></li>
+                                <li><a href='#'>Palazzos</a></li>
+                                <li><a href='#'>Shorts</a></li>
+                                <li><a href='#'>Skirts</a></li>
+                            </ul><!-- .ul-reset -->
+
+                            <ul class="ul-reset">
+                                <h3>Suits & Dress Material</h3>
+                                <li><a href='#'>All Sarees</a></li>
+                                <li><a href='#'>Silk Sarees</a></li>
+                                <li><a href='#'>Cotton Silk Sarees</a></li>
+                                <li><a href='#'>Cotton Sarees</a></li>
+                                <li><a href='#'>Skirts</a></li>
+                                <li><a href='#'>Chiffon Sarees</a></li>
+                                <li><a href='#'>Embroidered Sarees</a></li>
+                            </ul><!-- .ul-reset -->
+
+                            <ul class="ul-reset">
+                                <h3>Other Ethnic</h3>
+                                <li><a href='#'>Jeans</a></li>
+                                <li><a href='#'>Jeggings</a></li>
+                                <li><a href='#'>Palazzos</a></li>
+                                <li><a href='#'>Shorts</a></li>
+                                <li><a href='#'>Skirts</a></li>
+                            </ul><!-- .ul-reset -->
+
+                            <ul class="ul-reset">
+                                <h3>Kurta Sets</h3>
+                                <li><a href='#'>Jeans</a></li>
+                                <li><a href='#'>Jeggings</a></li>
+                                <li><a href='#'>Palazzos</a></li>
+                                <li><a href='#'>Shorts</a></li>
+                                <li><a href='#'>Skirts</a></li>
+                            </ul><!-- .ul-reset -->
+
+                <li class='droppable'>
+                    <a href='#'>Women Western</a>
+                    <div class='mega-menu'>
+                        <div class="container cf">
+                            <ul class="ul-reset">
+                                <h3>Top Wear</h3>
+                                <li><a href='#'>Dresses</a></li>
+                                <li><a href='#'>Tops</a></li>
+                                <li><a href='#'>Sweaters</a></li>
+                                <li><a href='#'>Jump Suits</a></li>
+
+                            </ul><!-- .ul-reset -->
+                            <ul class="ul-reset">
+                                <h3>Bottom Wear</h3>
+                                <li><a href='#'>Jeans</a></li>
+                                <li><a href='#'>Jeggings</a></li>
+                                <li><a href='#'>Palazzos</a></li>
+                                <li><a href='#'>Shorts</a></li>
+                                <li><a href='#'>Skirts</a></li>
+                            </ul><!-- .ul-reset -->
+                            <ul class="ul-reset">
+                                <h3>Inner Wear</h3>
+                                <li><a href='#'>Bra</a></li>
+                                <li><a href='#'>Briefs</a></li>
+
+                            </ul><!-- .ul-reset -->
+                            <ul class="ul-reset">
+                                <h3>Sleep Wear</h3>
+                                <li><a href='#'>Nightsuits</a></li>
+                                <li><a href='#'>Babydolls</a></li>
+
+                            </ul>
+                        </div><!-- .container -->
+                    </div><!-- .mega-menu -->
+                </li><!-- .droppable -->
+                <li class='droppable'>
+                    <a href='#'>Jewellery & Accessories</a>
+                    <div class='mega-menu'>
+                        <div class="container cf">
+                            <ul class="ul-reset">
+                                <h3>Jewellery</h3>
+                                <li><a href='#'>Jewellery Set</a></li>
+                                <li><a href='#'>Mangalsutras</a></li>
+                                <li><a href='#'>Earring</a></li>
+                                <li><a href='#'>Studs</a></li>
+                                <li><a href='#'>Bangles</a></li>
+                                <li><a href='#'>Neckles</a></li>
+                                <li><a href='#'>Ring</a></li>
+                                <li><a href='#'>Anklets</a></li>
+
+
+                            </ul><!-- .ul-reset -->
+                            <ul class="ul-reset">
+                                <h3>Women Accessory</h3>
+                                <li><a href='#'>Bags</a></li>
+                                <li><a href='#'>Watches</a></li>
+                                <li><a href='#'>Hair Accessory</a></li>
+                                <li><a href='#'>Sunglasses</a></li>
+                                <li><a href='#'>Socks</a></li>
+                            </ul><!-- .ul-reset -->
+
+                        </div><!-- .container -->
+                    </div><!-- .mega-menu-->
+                </li><!-- .droppable -->
+                <li class='droppable'>
+                    <a href='#'>Men</a>
+                    <div class='mega-menu'>
+                        <div class="container cf">
+                            <ul class="ul-reset">
+                                <h3>Top Wear</h3>
+                                <li><a href='#'>All Top wear</a></li>
+                                <li><a href='#'>Shirts</a></li>
+                                <li><a href='#'>Tshirts</a></li>
+
+
+                            </ul><!-- .container .ul-reset -->
+                            <ul class="ul-reset">
+                                <h3>Bottom Wear</h3>
+                                <li><a href='#'>Bags</a></li>
+                                <li><a href='#'>Watches</a></li>
+                                <li><a href='#'>Hair Accessory</a></li>
+                                <li><a href='#'>Sunglasses</a></li>
+                                <li><a href='#'>Socks</a></li>
+                            </ul><!-- .ul-reset -->
+
+                            <ul class="ul-reset">
+                                <h3>Men Accessory</h3>
+                                <li><a href='#'>Bags</a></li>
+                                <li><a href='#'>Watches</a></li>
+                                <li><a href='#'>Hair Accessory</a></li>
+                                <li><a href='#'>Sunglasses</a></li>
+                                <li><a href='#'>Socks</a></li>
+                            </ul><!-- .ul-reset -->
+
+                            <ul class="ul-reset">
+                                <h3>Men Footwear</h3>
+                                <li><a href='#'>Bags</a></li>
+                                <li><a href='#'>Watches</a></li>
+                                <li><a href='#'>Hair Accessory</a></li>
+                                <li><a href='#'>Sunglasses</a></li>
+                                <li><a href='#'>Socks</a></li>
+                            </ul><!-- .ul-reset -->
+
+                            <ul class="ul-reset">
+                                <h3>Ethnic Wear</h3>
+                                <li><a href='#'>Bags</a></li>
+                                <li><a href='#'>Watches</a></li>
+                                <li><a href='#'>Hair Accessory</a></li>
+                                <li><a href='#'>Sunglasses</a></li>
+                                <li><a href='#'>Socks</a></li>
+                            </ul><!-- .ul-reset -->
+
+                            <ul class="ul-reset">
+                                <h3>Inner & Sleep Wear</h3>
+                                <li><a href='#'>Bags</a></li>
+                                <li><a href='#'>Watches</a></li>
+                                <li><a href='#'>Hair Accessory</a></li>
+                                <li><a href='#'>Sunglasses</a></li>
+                                <li><a href='#'>Socks</a></li>
+                            </ul><!-- .ul-reset -->
+
+                <li class='droppable'>
+                    <a href='#'>Beauty & Health</a>
+                    <div class='mega-menu'>
+                        <div class="container cf">
+                            <ul class="ul-reset">
+                                <h3>Make up</h3>
+                                <li><a href='#'>Face</a></li>
+                                <li><a href='#'>Eyes</a></li>
+                                <li><a href='#'>Lips</a></li>
+                                <li><a href='#'>Nails</a></li>
+
+
+
+                            </ul><!-- .ul-reset -->
+                            <ul class="ul-reset">
+                                <h3>Wellness</h3>
+                                <li><a href='#'>Sanitizers</a></li>
+                                <li><a href='#'>Oral Care</a></li>
+                                <li><a href='#'>Feminine Hygiene</a></li>
+
+                            </ul><!-- .ul-reset -->
+                            <ul class="ul-reset">
+                                <h3>Skin Care</h3>
+                                <li><a href='#'>Deodrants</a></li>
+                            </ul><!-- .ul-reset -->
+
+                <li class='droppable'>
+                    <a href='#'>Bags & FootWear</a>
+                    <div class='mega-menu'>
+                        <div class="container cf">
+                            <ul class="ul-reset">
+                                <h3>Women Footwear</h3>
+                                <li><a href='#'>Flats</a></li>
+                                <li><a href='#'>Bellies</a></li>
+                                <li><a href='#'>Juttis</a></li>
+
+
+                            </ul><!-- .ul-reset -->
+                            <ul class="ul-reset">
+                                <h3>Men Footwear</h3>
+                                <li><a href='#'>Sport Shoes</a></li>
+                                <li><a href='#'>Casual Shoes</a></li>
+                                <li><a href='#'>Formal Shoes</a></li>
+                                <li><a href='#'>Sandals</a></li>
+                            </ul><!-- .ul-reset -->
+                            <ul class="ul-reset">
+                                <h3>Women Bags</h3>
+                                <li><a href='#'>All Women Bags</a></li>
+                                <li><a href='#'>Handbags</a></li>
+                                <li><a href='#'>Clutches</a></li>
+                                <li><a href='#'>Slingbags</a></li>
+                            </ul><!-- .ul-reset -->
+                            <ul class="ul-reset">
+                                <h3>Men Bags</h3>
+                                <li><a href='#'>All Men Bags</a></li>
+                                <li><a href='#'>Men Wallets</a></li>
+
+                            </ul><!-- .ul-reset -->
+                            <!-- 
+            <li class='droppable'>
+                <a href='#'>Bags & FootWear</a>
+                <div class='mega-menu'>
+                    <div class="container cf">
+                        <ul class="ul-reset">
+                            <h3>Women Footwear</h3>
+                            <li><a href='#'>Flats</a></li>
+                            <li><a href='#'>Bellies</a></li>
+                            <li><a href='#'>Juttis</a></li>
+
+
+                        </ul> -->
+
+                            <!-- .ul-reset -->
+                            <ul class="ul-reset">
+                                <h3>Men Footwear</h3>
+                                <li><a href='#'>Sport Shoes</a></li>
+                                <li><a href='#'>Casual Shoes</a></li>
+                                <li><a href='#'>Formal Shoes</a></li>
+                                <li><a href='#'>Sandals</a></li>
+                            </ul><!-- .ul-reset -->
+                            <ul class="ul-reset">
+                                <h3>Women Bags</h3>
+                                <li><a href='#'>All Women Bags</a></li>
+                                <li><a href='#'>Handbags</a></li>
+                                <li><a href='#'>Clutches</a></li>
+                                <li><a href='#'>Slingbags</a></li>
+                            </ul><!-- .ul-reset -->
+                            <ul class="ul-reset">
+                                <h3>Men Bags</h3>
+                                <li><a href='#'>All Men Bags</a></li>
+                                <li><a href='#'>Men Wallets</a></li>
+
+                            </ul><!-- .ul-reset -->
+
+        </nav>
+        
+    </header>
+    <h2>Sarees</h2>
+    <p>Showing 1-20 out of 536818 Products</p>
+    <div id="container">
+        <div>
+            <div class="inner">
+                <a href="../pages/selling.html"><img class="common" src="https://i.pinimg.com/564x/87/76/2b/87762bef8da2a3ec05f034c39b23c5ac.jpg"
+                    alt=""></a>
+            </div>
+            <div class="inner2">
+                <p class="arrange">Myra Attractive Sarees</p>
+                <div class="for-flex flex">
+                    <h2 class="padd2">₹619</h2>
+                    <h2 class="padd">₹719</h2>
+                    <h3>14% off</h3>
+
+                </div>
+                <div class="icon flex">
+                    <img class="imge" src="https://img.icons8.com/ios-filled/50/26e07f/discount--v1.png" />
+                    <h3 class="discount-txt">₹100 discount on 1st order</h3>
+                </div>
+                <div class="round-bar">
+                    <h4 class="free-d">Free Delivery</h4>
+                </div>
+                <div class="review">
+                    <h1 class="r-color">4.3*</h1>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+        <div>
+            <div class="inner">
+              <a href="selling2.htm">  <img class="common" src="https://cpimg.tistatic.com/06566582/b/4/Soft-Silk-Sarees-w300.jpg" alt=""></a>
+            </div>
+            <div class="inner2">
+                <p class="arrange">Myra Attractive Sarees
+                </p>
+                <div class="for-flex flex">
+                    <h2 class="padd2">₹619</h2>
+                    <h2 class="padd">₹719</h2>
+                    <h3>14% off</h3>
+
+                </div>
+                <div class="icon flex">
+                    <img class="imge" src="https://img.icons8.com/ios-filled/50/26e07f/discount--v1.png" />
+                    <h3 class="discount-txt">₹100 discount on 1st order</h3>
+                </div>
+                <div class="round-bar">
+                    <h4 class="free-d">Free Delivery</h4>
+                </div>
+                <div class="review ">
+                    <h1 class="r-color">4.3*</h1>
+
+
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <div class="inner">
+                <img class="common"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDwWhc_ScjcaSnni16QDLvycMFV7EdQ8G_UQ&usqp=CAU"
+                    alt="">
+            </div>
+            <div class="inner2">
+                <p class="arrange">Brasso silk saree </p>
+                <div class="for-flex flex">
+                    <h2 class="padd2">₹400</h2>
+                    <h2 class="padd">₹600</h2>
+                    <h3>30% off</h3>
+
+                </div>
+                <div class="icon flex">
+                    <img class="imge" src="https://img.icons8.com/ios-filled/50/26e07f/discount--v1.png" />
+                    <h3 class="discount-txt">₹86% discount on 1st order</h3>
+                </div>
+                <div class="round-bar">
+                    <h4 class="free-d">Free Delivery</h4>
+                </div>
+                <div class="review">
+                    <h1 class="r-color">3.2*</h1>
+
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <div class="inner">
+                <img class="common"
+                    src="https://3.bp.blogspot.com/-BuyT76-Y8Gc/XKoHa_3iAQI/AAAAAAAAFSw/2mAJf8afMWoMsu3MtjAGu_HShCtsrGS7ACLcBGAs/s1600/Beautiful-Hot-Indian-Models-in-Saree-High-Resolution-Wallpapers-01.jpg"
+                    alt="">
+            </div>
+            <div class="inner2">
+                <p class="arrange">Aakarsha Graceful Sarees </p>
+                <div class="for-flex flex">
+                    <h2 class="padd2">₹232</h2>
+                    <h2 class="padd">₹400</h2>
+                    <h3>30% off</h3>
+
+                </div>
+                <div class="icon flex">
+                    <img class="imge" src="https://img.icons8.com/ios-filled/50/26e07f/discount--v1.png" />
+                    <h3 class="discount-txt">₹86% discount on 1st order</h3>
+                </div>
+                <div class="round-bar">
+                    <h4 class="free-d">Free Delivery</h4>
+                </div>
+                <div class="review">
+                    <h1 class="r-color">4.2*</h1>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div id="container">
+        <div>
+            <div class="inner">
+                <img class="common" src="https://i.pinimg.com/564x/87/76/2b/87762bef8da2a3ec05f034c39b23c5ac.jpg"
+                    alt="">
+            </div>
+            <div class="inner2">
+                <p class="arrange">Ikkat saree</p>
+                <div class="for-flex flex">
+                    <h2 class="padd2">₹350</h2>
+                    <h2 class="padd">₹500</h2>
+                    <h3>30% off</h3>
+
+                </div>
+                <div class="icon flex">
+                    <img class="imge" src="https://img.icons8.com/ios-filled/50/26e07f/discount--v1.png" />
+                    <h3 class="discount-txt">₹86% discount on 1st order</h3>
+                </div>
+                <div class="round-bar">
+                    <h4 class="free-d">Free Delivery</h4>
+                </div>
+                <div class="review">
+                    <h1 class="r-color">4.3*</h1>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+        <div>
+            <div class="inner">
+                <img class="common"
+                    src="https://c4.wallpaperflare.com/wallpaper/551/968/951/actress-saree-kajal-agarwal-indian-girls-1400x2104-people-actresses-hd-art-wallpaper-preview.jpg"
+                    alt="">
+            </div>
+            <div class="inner2">
+                <p class="arrange">FANCY WOMEN SAREE</p>
+                <div class="for-flex flex">
+                    <h2 class="padd2">₹1200</h2>
+                    <h2 class="padd">₹2000</h2>
+                    <h3>30% off</h3>
+
+                </div>
+                <div class="icon flex">
+                    <img class="imge" src="https://img.icons8.com/ios-filled/50/26e07f/discount--v1.png" />
+                    <h3 class="discount-txt">₹86% discount on 1st order</h3>
+                </div>
+                <div class="round-bar">
+                    <h4 class="free-d">Free Delivery</h4>
+                </div>
+                <div class="review ">
+                    <h1 class="r-color">4.1*</h1>
+
+
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <div class="inner">
+                <img class="common"
+                    src="data:image/jpeg;base64,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"
+                    alt="">
+            </div>
+            <div class="inner2">
+                <p class="arrange">Women's Christian Bride saree</p>
+                <div class="for-flex flex">
+                    <h2 class="padd2">₹1650</h2>
+                    <h2 class="padd">₹1800</h2>
+                    <h3>30% off</h3>
+
+                </div>
+                <div class="icon flex">
+                    <img class="imge" src="https://img.icons8.com/ios-filled/50/26e07f/discount--v1.png" />
+                    <h3 class="discount-txt">₹90% discount on 1st order</h3>
+                </div>
+                <div class="round-bar">
+                    <h4 class="free-d">Free Delivery</h4>
+                </div>
+                <div class="review">
+                    <h1 class="r-color">3.2*</h1>
+
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <div class="inner">
+                <img class="common"
+                    src="https://medias.utsavfashion.com/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/e/m/embroidered-net-saree-in-grey-v1-scba2829.jpg"
+                    alt="">
+            </div>
+            <div class="inner2">
+                <p class="arrange">Jodhpuri Saree</p>
+                <div class="for-flex flex">
+                    <h2 class="padd2">₹630</h2>
+                    <h2 class="padd">₹900</h2>
+                    <h3>30% off</h3>
+
+                </div>
+                <div class="icon flex">
+                    <img class="imge" src="https://img.icons8.com/ios-filled/50/26e07f/discount--v1.png" />
+                    <h3 class="discount-txt">₹60 discount on 1st order</h3>
+                </div>
+                <div class="round-bar">
+                    <h4 class="free-d">Free Delivery</h4>
+                </div>
+                <div class="review">
+                    <h1 class="r-color">4.2*</h1>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div id="container">
+        <div>
+            <div class="inner">
+                <img class="common"
+                    src="https://images.pexels.com/photos/2270078/pexels-photo-2270078.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="">
+            </div>
+            <div class="inner2">
+                <p class="arrange">Sana silk saree with embroidered </p>
+                <div class="for-flex flex">
+                    <h2 class="padd2">₹1050</h2>
+                    <h2 class="padd">₹2000</h2>
+                    <h3>30% off</h3>
+
+                </div>
+                <div class="icon flex">
+                    <img class="imge" src="https://img.icons8.com/ios-filled/50/26e07f/discount--v1.png" />
+                    <h3 class="discount-txt">₹86% discount on 1st order</h3>
+                </div>
+                <div class="round-bar">
+                    <h4 class="free-d">Free Delivery</h4>
+                </div>
+                <div class="review">
+                    <h1 class="r-color">4.3*</h1>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+        <div>
+            <div class="inner">
+                <img class="common" src="https://cpimg.tistatic.com/06566582/b/4/Soft-Silk-Sarees-w300.jpg" alt="">
+            </div>
+            <div class="inner2">
+                <p class="arrange">Sana silk saree with embroidered </p>
+                <div class="for-flex flex">
+                    <h2 class="padd2">₹2500</h2>
+                    <h2 class="padd">₹3000</h2>
+                    <h3>30% off</h3>
+
+                </div>
+                <div class="icon flex">
+                    <img class="imge" src="https://img.icons8.com/ios-filled/50/26e07f/discount--v1.png" />
+                    <h3 class="discount-txt">₹86% discount on 1st order</h3>
+                </div>
+                <div class="round-bar">
+                    <h4 class="free-d">Free Delivery</h4>
+                </div>
+                <div class="review ">
+                    <h1 class="r-color">4.1*</h1>
+
+
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <div class="inner">
+                <img class="common"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Eony5K2b-uhLGkEsfOM4Ydqktne2x17xfg&usqp=CAU"
+                    alt="">
+            </div>
+            <div class="inner2">
+                <p class="arrange">Sana silk saree with embroidered </p>
+                <div class="for-flex flex">
+                    <h2 class="padd2">₹850</h2>
+                    <h2 class="padd">₹1000</h2>
+                    <h3>30% off</h3>
+
+                </div>
+                <div class="icon flex">
+                    <img class="imge" src="https://img.icons8.com/ios-filled/50/26e07f/discount--v1.png" />
+                    <h3 class="discount-txt">₹100 discount on 1st order</h3>
+                </div>
+                <div class="round-bar">
+                    <h4 class="free-d">Free Delivery</h4>
+                </div>
+                <div class="review">
+                    <h1 class="r-color">3.2*</h1>
+
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <div class="inner">
+                <img class="common" src="https://m.media-amazon.com/images/I/81TDzjsi9zL._UL1500_.jpg" alt="">
+            </div>
+            <div class="inner2">
+                <p class="arrange">Sana silk saree with embroidered </p>
+                <div class="for-flex flex">
+                    <h2 class="padd2">₹550</h2>
+                    <h2 class="padd">₹700</h2>
+                    <h3>30% off</h3>
+
+                </div>
+                <div class="icon flex">
+                    <img class="imge" src="https://img.icons8.com/ios-filled/50/26e07f/discount--v1.png" />
+                    <h3 class="discount-txt">₹90 discount on 1st order</h3>
+                </div>
+                <div class="round-bar">
+                    <h4 class="free-d">Free Delivery</h4>
+                </div>
+                <div class="review">
+                    <h1 class="r-color">4.2*</h1>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

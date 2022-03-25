@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/orders.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/097231be4e.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/511a6cb386.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <!-- Div1 -->
+        <div class="div1">
+    
+            <!-- imgView -->
+            <div id="imgDiv">
+                <img height="100%" width="200px" src="../img/headerLogo.png" alt="">
+            </div>
+            <!-- search Box -->
+            <div id="search">
+                <input type="text" placeholder="Try Saree, Kurti or Search by Product Code..">
+            </div>
+        
+        
+            <!-- downloadAp -->
+            <div onclick="playStore()" id="download">
+                <div id="downloadImgDiv">
+                    
+                    <i class="fas fa-mobile-alt" style="font-size:32px; color: grey; margin-top: 10px; text-align: center;"></i>
+                </div>
+    
+                <div id="downloadTextDiv">
+                    <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Download App</p>
+                </div>
+                <hr>
+            </div>
+    
+            <!-- Be a Supplier -->
+            <div id="Supplier">
+               <a href="../pages/becomesplier.html" style="color: black;" ><p style="font-family: 'Lucida Sans', 
+                'Lucida Sans Regular', 'Lucida Grande',
+                 'Lucida Sans Unicode', Geneva, Verdana, 
+                 sans-serif;">Become a Supplier</a></p>
+                
+            </div>
+            <hr>
+            <!-- profile -->
+            <div id="profile">
+                <div>
+                    <i class="far fa-user" style="font-size:25px; text-align: center;"></i>
+                </div>
+                <p><a href="../pages/login.html"style="color:black">Profile</a></p>
+            </div>
+            
+    
+            <!-- cart -->
+            <div id="cart" onclick="cart()">
+                <div>
+                    <i class="fas fa-shopping-cart" style="font-size: 25px; text-align: center; color: grey;"></i>
+                </div>
+                <p><a href="../pages/empty_cart.html" style="color: gray;">Cart</a></p>
+                
+            </div>
+        </div>
+    
+    
+    
+        <nav class="nav" style="margin-bottom: 30px;"><hr>
+            <ul class="container ul-reset">
+    
+                <li class='droppable' style="margin-bottom: 20px;">
+                    <a href='#'>Women Ethnic</a>
+                    <div class='mega-menu'>
+                        <div class="container cf">
+                            <ul class="ul-reset">
+                                <h3>All Women Ethnics</h3>
+                                <li><a href='../pages/products.html'>View All</a></li>
+    
+    
+                            </ul><!-- .ul-reset -->
+                            <ul class="ul-reset">
+                                <h3>Sarees</h3>
+                                <li><a href='#'>Jeans</a></li>
+                                <li><a href='#'>Jeggings</a></li>
+                                <li><a href='#'>Palazzos</a></li>
+                                <li><a href='#'>Shorts</a></li>
+                                <li><a href='#'>Skirts</a></li>
+                            </ul><!-- .ul-reset -->
+    
+                            <ul class="ul-reset">
+                                <h3>Kurtis</h3>
+                                <li><a href='#'>Jeans</a></li>
+                                <li><a href='#'>Jeggings</a></li>
+                                <li><a href='#'>Palazzos</a></li>
+                                <li><a href='#'>Shorts</a></li>
+                                <li><a href='#'>Skirts</a></li>
+                            </ul><!-- .ul-reset -->
+    
+                            <ul class="ul-reset">
+                                <h3>Suits & Dress Material</h3>
+                                <li><a href='../pages/products.html'>All Sarees</a></li>
+                                <li><a href='../pages/products.html'>Silk Sarees</a></li>
+                                <li><a href='../pages/products.html'>Cotton Silk Sarees</a></li>
+                                <li><a href='../pages/products.html'>Cotton Sarees</a></li>
+                                <li><a href='#'>Skirts</a></li>
+                                <li><a href='../pages/products.html'>Chiffon Sarees</a></li>
+                                <li><a href='../pages/products.html'>Embroidered Sarees</a></li>
+                            </ul><!-- .ul-reset -->
+    
+                            <ul class="ul-reset">
+                                <h3>Other Ethnic</h3>
+                                <li><a href='#'>Jeans</a></li>
+                                <li><a href='#'>Jeggings</a></li>
+                                <li><a href='#'>Palazzos</a></li>
+                                <li><a href='#'>Shorts</a></li>
+                                <li><a href='#'>Skirts</a></li>
+                            </ul><!-- .ul-reset -->
+    
+                            <ul class="ul-reset">
+                                <h3>Kurta Sets</h3>
+                                <li><a href='#'>Jeans</a></li>
+                                <li><a href='#'>Jeggings</a></li>
+                                <li><a href='#'>Palazzos</a></li>
+                                <li><a href='#'>Shorts</a></li>
+                                <li><a href='#'>Skirts</a></li>
+                            </ul><!-- .ul-reset -->
+    
+                <li class='droppable'>
+                    <a href='#'>Women Western</a>
+                    <div class='mega-menu'>
+                        <div class="container cf">
+                            <ul class="ul-reset">
+                                <h3>Top Wear</h3>
+                                <li><a href='#'>Dresses</a></li>
+                                <li><a href='#'>Tops</a></li>
+                                <li><a href='#'>Sweaters</a></li>
+                                <li><a href='#'>Jump Suits</a></li>
+    
+                            </ul><!-- .ul-reset -->
+                            <ul class="ul-reset">
+                                <h3>Bottom Wear</h3>
+                                <li><a href='#'>Jeans</a></li>
+                                <li><a href='#'>Jeggings</a></li>
+                                <li><a href='#'>Palazzos</a></li>
+                                <li><a href='#'>Shorts</a></li>
+                                <li><a href='#'>Skirts</a></li>
+                            </ul><!-- .ul-reset -->
+                            <ul class="ul-reset">
+                                <h3>Inner Wear</h3>
+                                <li><a href='#'>Bra</a></li>
+                                <li><a href='#'>Briefs</a></li>
+    
+                            </ul><!-- .ul-reset -->
+                            <ul class="ul-reset">
+                                <h3>Sleep Wear</h3>
+                                <li><a href='#'>Nightsuits</a></li>
+                                <li><a href='#'>Babydolls</a></li>
+    
+                            </ul>
+                        </div><!-- .container -->
+                    </div><!-- .mega-menu -->
+                </li><!-- .droppable -->
+                <li class='droppable'>
+                    <a href='#'>Jewellery & Accessories</a>
+                    <div class='mega-menu'>
+                        <div class="container cf">
+                            <ul class="ul-reset">
+                                <h3>Jewellery</h3>
+                                <li><a href='#'>Jewellery Set</a></li>
+                                <li><a href='#'>Mangalsutras</a></li>
+                                <li><a href='#'>Earring</a></li>
+                                <li><a href='#'>Studs</a></li>
+                                <li><a href='#'>Bangles</a></li>
+                                <li><a href='#'>Neckles</a></li>
+                                <li><a href='#'>Ring</a></li>
+                                <li><a href='#'>Anklets</a></li>
+    
+    
+                            </ul><!-- .ul-reset -->
+                            <ul class="ul-reset">
+                                <h3>Women Accessory</h3>
+                                <li><a href='#'>Bags</a></li>
+                                <li><a href='#'>Watches</a></li>
+                                <li><a href='#'>Hair Accessory</a></li>
+                                <li><a href='#'>Sunglasses</a></li>
+                                <li><a href='#'>Socks</a></li>
+                            </ul><!-- .ul-reset -->
+    
+                        </div><!-- .container -->
+                    </div><!-- .mega-menu-->
+                </li><!-- .droppable -->
+                <li class='droppable'>
+                    <a href='../pages/mens.html'>Men</a>
+                    <div class='mega-menu'>
+                        <div class="container cf">
+                            <ul class="ul-reset">
+                                  <h3>Top Wear</h3>
+                                <li><a href='../pages/mens.html'>All Top wear</a></li>
+                                <li><a href='../pages/mens.html'>Shirts</a></li>
+                                <li><a href='../pages/mens.html'>Tshirts</a></li>
+    
+    
+                            </ul><!-- .container .ul-reset -->
+                            <ul class="ul-reset">
+                                <h3>Bottom Wear</h3>
+                                <li><a href='#'>Bags</a></li>
+                                <li><a href='#'>Watches</a></li>
+                                <li><a href='#'>Hair Accessory</a></li>
+                                <li><a href='#'>Sunglasses</a></li>
+                                <li><a href='#'>Socks</a></li>
+                            </ul><!-- .ul-reset -->
+    
+                            <ul class="ul-reset">
+                                <h3>Men Accessory</h3>
+                                <li><a href='#'>Bags</a></li>
+                                <li><a href='#'>Watches</a></li>
+                                <li><a href='#'>Hair Accessory</a></li>
+                                <li><a href='#'>Sunglasses</a></li>
+                                <li><a href='#'>Socks</a></li>
+                            </ul><!-- .ul-reset -->
+    
+                            <ul class="ul-reset">
+                                <h3>Men Footwear</h3>
+                                <li><a href='#'>Bags</a></li>
+                                <li><a href='#'>Watches</a></li>
+                                <li><a href='#'>Hair Accessory</a></li>
+                                <li><a href='#'>Sunglasses</a></li>
+                                <li><a href='#'>Socks</a></li>
+                            </ul><!-- .ul-reset -->
+    
+                            <ul class="ul-reset">
+                                <h3>Ethnic Wear</h3>
+                                <li><a href='#'>Bags</a></li>
+                                <li><a href='#'>Watches</a></li>
+                                <li><a href='#'>Hair Accessory</a></li>
+                                <li><a href='#'>Sunglasses</a></li>
+                                <li><a href='#'>Socks</a></li>
+                            </ul><!-- .ul-reset -->
+    
+                            <ul class="ul-reset">
+                                <h3>Inner & Sleep Wear</h3>
+                                <li><a href='#'>Bags</a></li>
+                                <li><a href='#'>Watches</a></li>
+                                <li><a href='#'>Hair Accessory</a></li>
+                                <li><a href='#'>Sunglasses</a></li>
+                                <li><a href='#'>Socks</a></li>
+                            </ul><!-- .ul-reset -->
+    
+                <li class='droppable'>
+                    <a href='#'>Beauty & Health</a>
+                    <div class='mega-menu'>
+                        <div class="container cf">
+                            <ul class="ul-reset">
+                                <h3>Make up</h3>
+                                <li><a href='#'>Face</a></li>
+                                <li><a href='#'>Eyes</a></li>
+                                <li><a href='#'>Lips</a></li>
+                                <li><a href='#'>Nails</a></li>
+    
+    
+    
+                            </ul><!-- .ul-reset -->
+                            <ul class="ul-reset">
+                                <h3>Wellness</h3>
+                                <li><a href='#'>Sanitizers</a></li>
+                                <li><a href='#'>Oral Care</a></li>
+                                <li><a href='#'>Feminine Hygiene</a></li>
+    
+                            </ul><!-- .ul-reset -->
+                            <ul class="ul-reset">
+                                <h3>Skin Care</h3>
+                                <li><a href='#'>Deodrants</a></li>
+                            </ul><!-- .ul-reset -->
+    
+                <li class='droppable'>
+                    <a href='#'>Bags & FootWear</a>
+                    <div class='mega-menu'>
+                        <div class="container cf">
+                            <ul class="ul-reset">
+                                <h3>Women Footwear</h3>
+                                <li><a href='#'>Flats</a></li>
+                                <li><a href='#'>Bellies</a></li>
+                                <li><a href='#'>Juttis</a></li>
+    
+    
+                            </ul><!-- .ul-reset -->
+                            <ul class="ul-reset">
+                                <h3>Men Footwear</h3>
+                                <li><a href='#'>Sport Shoes</a></li>
+                                <li><a href='#'>Casual Shoes</a></li>
+                                <li><a href='#'>Formal Shoes</a></li>
+                                <li><a href='#'>Sandals</a></li>
+                            </ul><!-- .ul-reset -->
+                            <ul class="ul-reset">
+                                <h3>Women Bags</h3>
+                                <li><a href='#'>All Women Bags</a></li>
+                                <li><a href='#'>Handbags</a></li>
+                                <li><a href='#'>Clutches</a></li>
+                                <li><a href='#'>Slingbags</a></li>
+                            </ul><!-- .ul-reset -->
+                            <ul class="ul-reset">
+                                <h3>Men Bags</h3>
+                                <li><a href='#'>All Men Bags</a></li>
+                                <li><a href='#'>Men Wallets</a></li>
+    
+                            </ul><!-- .ul-reset -->
+                            <!-- 
+                <li class='droppable'>
+                    <a href='#'>Bags & FootWear</a>
+                    <div class='mega-menu'>
+                        <div class="container cf">
+                            <ul class="ul-reset">
+                                <h3>Women Footwear</h3>
+                                <li><a href='#'>Flats</a></li>
+                                <li><a href='#'>Bellies</a></li>
+                                <li><a href='#'>Juttis</a></li>
+    
+    
+                            </ul> -->
+                            
+                            <!-- .ul-reset -->
+                            <ul class="ul-reset">
+                                <h3>Men Footwear</h3>
+                                <li><a href='#'>Sport Shoes</a></li>
+                                <li><a href='#'>Casual Shoes</a></li>
+                                <li><a href='#'>Formal Shoes</a></li>
+                                <li><a href='#'>Sandals</a></li>
+                            </ul><!-- .ul-reset -->
+                            <ul class="ul-reset">
+                                <h3>Women Bags</h3>
+                                <li><a href='#'>All Women Bags</a></li>
+                                <li><a href='#'>Handbags</a></li>
+                                <li><a href='#'>Clutches</a></li>
+                                <li><a href='#'>Slingbags</a></li>
+                            </ul><!-- .ul-reset -->
+                            <ul class="ul-reset">
+                                <h3>Men Bags</h3>
+                                <li><a href='#'>All Men Bags</a></li>
+                                <li><a href='#'>Men Wallets</a></li>
+    
+                            </ul><!-- .ul-reset -->
+    
+        </nav>
+        
+       
+    </header>
+
+
+    <div class="innerDiv36">
+
+        <img id="middleImage" height="300px" width="350px" src="../img/ordersPic.png" alt="">
+
+        <h4 id="lasth1h1">Track Orders on App</h4>
+
+        <p id="lastPP">Download the Meesho App to track your orders</p>
+
+        <input onclick="playStore()" id="playButton" type="submit" value="Download Meesho App" >
+
+
+    </div>
+
+
+
+    
+</body>
+</html>
+
+<script src="../js/orders.js">
+
+</script>
